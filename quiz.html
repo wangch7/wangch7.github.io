@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Food Maniac - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="nav">
+        	<div id="nav_wrapper">
+	            <ul class="nav">
+	            	<li><a href="index.html">Home</a></li>
+	                <li><a href="about.html">About</a></li>
+	                <li><a href="#">Recipe</a>
+	                    <ul>
+	                        <li><a href="#">Noodle</a>
+	                        <li><a href="fish.html">Fish</a>
+	                        <li><a href="seaweed.html">Seaweed</a>
+	                    </ul>
+	                </li>
+	                <li><a href="quiz.html">Quiz</a></li>
+	            </ul>
+	        </div>
+	    </div>
+
+	    <!-- Here begins the quiz  -->
+		<form id="quiz" name="quiz">
+			<h1>Relax. Fun time!</h1>
+			<p>What is the main style of cuisin on this website?</p>
+			<input id="textbox" type="text" name="question1">
+
+			<p>Which dish is not introduced in this website?</p>
+			<input type="radio" id="mc" name="question2" value="Noodle">Green Onion Noodle<br>
+			<input type="radio" id="mc" name="question2" value="Tofu">Ma Po Tofu<br>
+			<input type="radio" id="mc" name="question2" value="Fish">Grilled Fish<br>
+			<input type="radio" id="mc" name="question2" value="Seaweed">Garlic Sautéed Seaweed<br>
+
+			<p>What is one of the common ingredience needed in all 3 recipes?</p>
+			<input type="radio" id="mc" name="question3" value="Ginger">Ginger<br>
+			<input type="radio" id="mc" name="question3" value="Cheese">Cheese<br>
+			<input type="radio" id="mc" name="question3" value="Milk">Milk<br>
+			<input type="radio" id="mc" name="question3" value="Pasta">Pasta<br>
+
+			<input id="button" tyoe="button" value="I'm finished!" onclick="check();">
+
+		</form>
+
+		<div id="after_submit">
+			<p id="message"></p>
+			<p id="number_correct"></p>
+			<img id="gif">
+		</div>
+
+		<script src="js/quiz.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
